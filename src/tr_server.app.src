@@ -1,0 +1,18 @@
+%%%-------------------------------------------------------------------
+%%% @author jegan
+%%% @copyright (C) 2018, <COMPANY>
+%%% @doc
+%%%
+%%% @end
+%%% Created : 28. Oct 2018 7:49 PM
+%%%-------------------------------------------------------------------
+{application, tr_server,
+ [{description, "RPC server for Erlang and OTP in action"},
+  {vsn, "0.1.0"},
+  {modules, [tr_server_app,
+   tr_server_sup,
+   tr_server]},
+  {registered, [tr_server_sup]},
+  {applications, [kernel, stdlib]},
+  {mod, {tr_server_app, []}}
+ ]}.
